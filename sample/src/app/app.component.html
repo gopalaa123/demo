@@ -1,0 +1,372 @@
+
+  <p>
+  <span matBadge="4" matBadgeOverlap="false">Text with a badge</span>
+</p>
+
+<p>
+  Button with a badge on the left
+  <button mat-raised-button color="primary"
+      matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+    Action
+  </button>
+</p>
+
+<p>
+  Icon with a badge
+  <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+    
+    <span class="cdk-visually-hidden">
+      Example with a home icon with overlaid badge showing the number 15
+    </span>
+</p>
+
+<p>
+  <span [matBadge]="notification" > notification</span>
+</p>
+
+<p>
+  <span matBadge="10" matBadgeColor="accent">adil</span>
+</p>
+<p>
+  <span matBadge="10" matBadgeColor="warn" matBadgeOverlap="false">hari</span>
+</p>
+
+
+
+<mat-toolbar color="primary">
+  <div>Codevolution</div>
+  <div>
+    <span>gopal</span>
+    <span>adil</span>
+    <span>Servicesv</span>
+  </div>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav opened="opened">sidenav</mat-sidenav>
+  <mat-sidenav-content>main</mat-sidenav-content>
+</mat-sidenav-container> 
+
+<button mat-raised-button> raised </button>
+<button mat-raised-button color="primary"> Primary </button>
+<button mat-raised-button disabled> disabled </button>
+<button mat-stroked-button> stroked </button>
+<button mat-stroked-button color="accent"> Accent </button>
+<button mat-flat-button> Flat </button>
+<button mat-flat-button color="warn">  Warn </button>
+<button mat-fab-button>fab</button>
+<button mat-fab-button color="accent">Accent</button>
+<button mat-mini-fab-button>minifab</button>
+<button mat-mini-fab-button color="primary">Primary</button>
+<div>
+  <mat-button-toggle #toggleBtn>toggle</mat-button-toggle>
+  {{toggleBtn.checked}}
+</div>
+<div>
+  <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+  <mat-button-toggle value="angular"> angular </mat-button-toggle>
+    <mat-button-toggle value="python">PYTHON </mat-button-toggle>
+    <mat-button-toggle  value="react">React</mat-button-toggle>
+  
+  {{toggleGroup.value}}
+   </mat-button-toggle-group>
+   </div>
+<p>
+  <span matBadge="4" matBadgeoverlap="flase">badge fallse</span>
+</p>
+<p>
+   <button mat-raised-button color="accent" matbadge="8" matbadgeposition="after" matbadgecolor="warn"> gopal
+
+  </button>
+</p>
+<p>
+  <span [matBadge]="notification">
+
+  </span>
+</p>
+<p>
+  <span matBadge="8" matBadgeColor="primary" matBadgeoverlap="false">
+  </span>
+</p>
+
+  
+    <mat-spinner *ngIf="showSpinner" color="accent"></mat-spinner>
+    <button (click)="loadData()">Load Data</button>)
+    <mat-progress-spinner value="100"></mat-progress-spinner> 
+<mat-spinner *ngIf="showSpinner" color="accent"></mat-spinner>
+<button (click)="loadData()">Load Data</button><mat-menu #appMenu="matMenu">
+ <hr> <hr> <hr> 
+ <mat-menu #appMenu="matMenu" xPosition="after" yPosition="above">
+  <button mat-menu-item  [matMenuTriggerFor]="subMenu">Forntend</button>
+  <button mat-menu-item [matMenuTriggerFor]="rayasam">Back-End</button>
+ </mat-menu>
+ <br> <br>
+
+ <button mat-flat-button [matMenuTriggerFor]="appMenu" >Menu</button>
+ 
+<mat-menu #subMenu="matMenu"  align="center" >
+  <button mat-button color="accent" [matMenuTriggerFor]="Menu">Angular</button>
+  <button mat-button color="accent" >React</button>
+  <button mat-button  color="accent" backgruond-color="primary">Vue</button>
+</mat-menu>
+<br> <br>
+<mat-menu #Menu="matMenu">
+  <button mat-button [matMenuTriggerFor]="nu" >ngif</button>
+  <button mat-button >ngfor</button>
+  <button mat-button >ngswitch</button>
+</mat-menu>
+
+<mat-menu #nu="matMenu">
+  <button mat-button >ngif</button>
+  <button mat-button >ngfor</button>
+  <button mat-button >ngswitch</button>
+</mat-menu> 
+ 
+
+
+<mat-menu #rayasam="matMenu">
+  <button mat-button >ngif</button>
+  <button mat-button >ngfor</button>
+  <button mat-button >ngswitch</button>
+</mat-menu> 
+
+<mat-list dense>
+<mat-list-item>Angular</mat-list-item>
+<mat-list-item>python</mat-list-item>
+<mat-list-item>java</mat-list-item>
+</mat-list>
+<mat-divider></mat-divider>
+<mat-nav-list>
+  <a mat-list-item href="#">gopal</a>
+  <a mat-list-item href="#">sai</a>
+  <a mat-list-item href="#">gopal</a>
+</mat-nav-list>  
+  <br> <br>
+<mat-divider></mat-divider>
+<mat-grid-list cols="2" rowHeight="100px" gutterSize="10px">
+  <mat-grid-tile colspan="2" > tile1</mat-grid-tile>
+  <mat-grid-tile rowspan> tile2</mat-grid-tile>
+  <mat-grid-tile> tile3</mat-grid-tile>
+</mat-grid-list>
+<mat-divider></mat-divider>
+
+<mat-accordion >
+<mat-expansion-panel  hideToggle>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+        mphasis company timmings
+    </mat-panel-title>
+    <mat-panel-description>
+      end time : 9 hours
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  THIS A EXPANSION PANEL PAGE
+   
+<mat-action-row >
+  <button mat-flat-button color="accent">Enroll</button>
+</mat-action-row>
+<br> <br>
+</mat-expansion-panel>
+
+<mat-expansion-panel  hideToggle>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+        Angular
+    </mat-panel-title>
+    <mat-panel-description>
+      end time : 3hours
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  THIS A EXPANSION PANEL PAGE
+   <br> <br>
+<mat-action-row >
+  <button mat-flat-button color="accent">Enroll</button>
+</mat-action-row>
+</mat-expansion-panel>
+</mat-accordion>
+<br> <br>
+<mat-divider></mat-divider>
+<mat-card>
+<mat-card-title>
+matcardtitle
+  </mat-card-title>
+<mat-card-content>
+matcardcontent
+</mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-flat-button>Login</button>
+  </mat-card-actions>
+</mat-card>
+<br> <br>
+
+<mat-divider></mat-divider>
+<mat-tab-group #tabRef>
+  <mat-tab label="angular">Angular </mat-tab>
+  <mat-tab label="python">Pythoncontant</mat-tab>
+  <mat-tab label="decops">decopscontant</mat-tab>
+</mat-tab-group>
+{{tabRef.selectindex}}
+<br> <br>
+<mat-divider></mat-divider>
+
+
+<mat-horizontal-stepper>
+  <mat-step label="shipping Address"></mat-step>
+  <p>shipping Address</p>
+  <mat-step label="Order Details"></mat-step>
+  <p>Order Details</p>
+  <mat-step label="Place holder"></mat-step>
+  <p>Place holder</p>
+</mat-horizontal-stepper>
+
+ <br> <br>
+
+
+
+<mat-vertical-stepper linear>
+  <mat-step label="shipping Address" completed="false">
+  <p>shipping Address Detils</p></mat-step>
+  <mat-step label="Order Details" completed="true">
+  <p>Order Details Detils</p>
+<div>
+  <button mat-mat-flat-button matStepperNext>Next</button>
+  <button mat-mat-flat-button matStepperPrevious>Back</button>
+</div></mat-step>
+  <mat-step label="Place holder" completed="true">
+  <p>Place holder Detils</p></mat-step>
+</mat-vertical-stepper>
+<br> <br>
+
+<mat-divider></mat-divider>
+
+<mat-form-field>
+<mat-label>Name</mat-label>
+   <input matInput> 
+</mat-form-field>
+<br>
+<mat-form-field floatLabel="never">
+  <mat-label>Name</mat-label>
+     <input matInput> 
+  </mat-form-field>
+  <br>
+  <mat-form-field floatLabel="always">
+    <mat-label>Name</mat-label>
+       <input matInput> 
+    </mat-form-field>
+
+    <mat-form-field floatLabel="auto">
+      <mat-label>Name</mat-label>
+         <input matInput> 
+      </mat-form-field>
+      <br>
+      <mat-form-field floatLabel="auto" hiddenRequiredMarker appearance="legacy">
+        <mat-label>Name</mat-label>
+           <input matInput required> 
+           <mat-hint align="end">min 5 charachters</mat-hint>
+        </mat-form-field>
+        <br> <br>
+        <mat-form-field floatLabel="auto" hiddenRequiredMarker appearance="standard">
+          <mat-label>Name</mat-label>
+             <input matInput required> 
+             <mat-hint align="end">min 5 charachters</mat-hint>
+          </mat-form-field>
+            <br> <br>
+            <mat-form-field floatLabel="auto" hiddenRequiredMarker appearance="outline" color="accent">
+              <mat-label>Name</mat-label>
+                 <input matInput required> 
+                 <mat-hint align="end">min 5 charachters</mat-hint>
+              </mat-form-field>
+              <br> <br> <br> <br>
+              <mat-form-field>
+                <mat-label>Topic</mat-label>
+                <mat-select [(value)]="selectedValue">
+                  <mat-option>None</mat-option>
+                  <mat-option value="angular">Angular</mat-option>
+                  <mat-option value="python">python</mat-option>
+                  <mat-option value="react">React</mat-option>
+                </mat-select>
+              </mat-form-field>
+-                {{selectedValue}}
+<mat-form-field>
+  <mat-label>Topic</mat-label>
+  <mat-select [(value)]="selectedValue" multiple>
+    <mat-option>None</mat-option>
+      <mat-optgroup leble="web">
+    <mat-option value="angular">Angular</mat-option>
+    <mat-option value="python">python</mat-option>
+    <mat-option value="react">React</mat-option>
+  </mat-optgroup>
+  <mat-optgroup lebel="mobile">
+    <mat-option value="sim">Sim</mat-option>
+    <mat-option value="software">Software</mat-option>
+    <mat-option value="battery">Bettary</mat-option>
+  </mat-optgroup>
+  </mat-select>
+</mat-form-field>
+-                {{selectedValue}}  
+
+   <br> <br> <br> <br>
+   <mat-checkbox>
+     subscribe
+   </mat-checkbox>
+   <br> <br>
+   <mat-checkbox labelPosition="before">
+     subscribe
+   </mat-checkbox>
+   <br> <br>
+   <mat-checkbox color="warn">
+    subscribe
+  </mat-checkbox>
+  <br> <br>
+<mat-radio-group>
+  <mat-radio-button value="angular" color="primary">Angular</mat-radio-button>
+  <mat-radio-button value="angular" color="warm">Angular</mat-radio-button>
+  <mat-radio-button value="angular" color="accent">Angular</mat-radio-button>
+</mat-radio-group>
+<br> <br> <br> <br>
+<mat-form-field>
+  <input matInput [matDatepicker]="myDatepicker">
+  <mat-datepicker-toggle [for]="myDatepicker" matSuffix></mat-datepicker-toggle>
+  <mat-datepicker  #myDatepicker starview="year"></mat-datepicker>
+  <br> <br> <br> <br>
+  <button mat-raised-button matTooltip="welcome to codevolution" mattooltipPosition="after">Hello</button>
+
+
+<form>
+  <input type="text" matInput />
+</form>
+<br> <br> <br> <br> <br>
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <!-- Position Column 
+  <ng-container matColumnDef="position">
+    <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
+  </ng-container>
+
+  <!-- Name Column 
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+  </ng-container>
+
+  <!-- Weight Column 
+  <ng-container matColumnDef="weight">
+    <mat-header-cell *matHeaderCellDef> Weight </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.weight}} </mat-cell>
+  </ng-container>
+
+  <!-- Symbol Column 
+  <ng-container matColumnDef="symbol">
+    <mat-header-cell *matHeaderCellDef> Symbol </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.symbol}} </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
+
+
+
+<app-teacher></app-teacher>
+
+
+ 
